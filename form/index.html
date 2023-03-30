@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+
+  <link rel="stylesheet" href="css/zero.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper-form">
+      <p class="form__heading">
+        Contact Form
+      </p>
+      <form action="">
+        <div class="form-main">
+          <div class="form__wrapper">
+            <div class="form__box">
+              <label class="form__title" for="name">Ваше имя</label>
+              <input class="form__field" name="name" type="text" id="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__box">
+              <label class="form__title" for="mail">Ваша почта</label>
+              <input class="form__field" name="mail" type="mail" id="mail" placeholder="Ваша почта">
+            </div>
+            <div class="form__box">
+              <label class="form__title" for="phone">Ваш номер телефона</label>
+              <input class="form__field form__phone" name="phone" type="tel" id="phone" placeholder="Ваш номер">
+            </div>
+          </div>
+          <div class="form__message">
+            <label class="form__title" for="message">Ваше письмо</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Ваше письмо"></textarea>
+          </div>
+        </div>
+        <div class="form-services">
+          <label for="" class="form__title form__title_services">Сервисы</label>
+          <div class="form-services__checkboxs">
+            <label class="form-label__checkbox" for="web-design">
+              <input type="checkbox" id="web-design" name='web-design'>
+              <p>Веб-дизайн</p>
+            </label>
+            <label class="form-label__checkbox" for="web-development">
+              <input type="checkbox" id="web-development" name='web-development'>
+              <p>Веб-разработка</p>
+            </label>
+            <label class="form-label__checkbox" for="logo-design">
+              <input type="checkbox" id="logo-design" name='logo-design'>
+              <p>Дизайн логотипа</p>
+            </label>
+            <label class="form-label__checkbox" for="other">
+              <input type="checkbox" id="other" name='other'>
+              <p>Другое</p>
+            </label>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="form__submit" type="submit">Отправить форму</button>
+        </div>
+        <div class="status">
+          Статус письма
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

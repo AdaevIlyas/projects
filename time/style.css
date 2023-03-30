@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper-bg {
+  width: 100vw;
+  height: 100vh;
+  background: url('./img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-time {
+  height: 100vh;
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #36427097;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.header__logo span {
+  color: #FF8271;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__link {
+  color: white;
+  font-size: 18px;
+}
+
+/* main */
+.time {
+  text-align: center;
+}
+
+.time__month {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.time__heading {
+  font-size: 46px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.time__counter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.time__clock_heading {
+  font-size: 120px;
+  font-weight: 500;
+  color: #FF8271;
+}
+
+.time__clock_descr {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.btn__buy {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px 30px;
+  border-radius: 20px;
+  background: #606CE0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn__buy:hover {
+  background: #4353e1;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+}
+
+.footer__music {
+  display: flex;
+}
+
+.footer__music-item {
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer__music-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.footer__music-item img {
+  width: 20px;
+  margin-right: 5px;
+}

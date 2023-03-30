@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+textarea,
+input {
+  resize: none;
+  padding: 20px;
+  font-size: 16px;
+  background: #ebebed;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+textarea:focus,
+input:focus {
+  color: #FA949D;
+  outline: 3px solid #FA949D;
+  background: white;
+}
+
+textarea:hover,
+input:hover:not() {
+  color: #FA949D;
+  outline: 3px solid #FA949D;
+  background: white;
+}
+
+textarea:hover::placeholder,
+input:hover::placeholder {
+  color: #FA949D;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #3E1F92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper-form {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.form__heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.form__message {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-main {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.form__wrapper {
+  margin-right: 50px;
+}
+
+.form__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__box:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.form__title {
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 100%;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.form-services {
+  margin-bottom: 70px;
+}
+
+.form__title_services {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form-services__checkboxs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-label__checkbox p {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ebebed;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+input:checked+p {
+  color: #FA949D;
+  outline: 3px solid #FA949D;
+  background: white;
+}
+
+.form__submit {
+  color: white;
+  background: #FA949D;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  opacity: 0.6;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: end;
+}
+
+form {
+  position: relative;
+}
+
+.status {
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 20px 80px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 15px rgb(163, 163, 163);
+}

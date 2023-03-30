@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  height: 101vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 5vw;
+  color: black;
+}
+
+.wrapper-start {
+  background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+  background: linear-gradient(to right, #26D0CE, #1A2980);
+}

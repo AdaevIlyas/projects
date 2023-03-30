@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  font-family: 'Open Sans';
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  font-size: 5vw;
+  color: black;
+}
+
+.quote__btn {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: rgba(255, 0, 0, 0.444);
+  font-size: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.quote__btn:hover {
+  opacity: 0.7;
+}
+
+.quote {
+  text-align: center;
+}
+
+.quote__author {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.quote__text {
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
