@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+
+.get-wrapper {
+  padding: 40px;
+  background: rgb(97, 213, 228);
+}
+
+.get-wrapper__heading {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.list {
+  list-style: none;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
