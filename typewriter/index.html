@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typewriter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .text-change::after {
+      content: '';
+      display: inline-block;
+      background-color: rgb(168 85 247 / var(--tw-text-opacity));
+      margin-left: 2px;
+      width: 4px;
+      height: 70px;
+      animation: cursor 0.45s ease infinite
+    }
+
+    @keyframes cursor {
+      0% {
+        opacity: 1;
+      }
+
+      49% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper flex">
+    <div class="text font-serif text-8xl  mt-20 ml-60">
+      I'm <span class="text-change bold text-purple-500 font-semibold ml-5"></span>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
